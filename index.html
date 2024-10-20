@@ -34,19 +34,46 @@
             display: flex;
             justify-content: center;
          }
+         .price {
+            text-align: center;
+            font-size: 24px;
+            margin: 15px 0;
+            color: #333;
+        }
+        .shop-now {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .shop-now:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
+ 
     <img src="1.webp" id="main-img"/>
+
+    
     <div class="container">
-        <img src="1.webp" onclick="changeImg(1)" class="Product"/>
+ <img src="1.webp" onclick="changeImg(1)" class="Product"/>
         <img src="2.webp " onclick="changeImg(2)"class="Product"/>
         <img src= "3.webp" onclick="changeImg(3)"class="Product"/>
         <img src="4.webp"onclick="changeImg(4)" class="Product"/>
 
-
-    </div>
-    <script>
+</div>
+<div class="price">₹ 678</div>
+<a href="#" class="shop-now">Shop Now</a>
+     <script>
 function changeImg(num){
     const mainImg= document.getElementById('main-img');
     if(num==1){
